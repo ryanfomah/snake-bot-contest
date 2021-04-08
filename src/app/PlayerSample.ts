@@ -27,8 +27,8 @@ export interface Snake {
   id: string
   isAlive: boolean
   body: Position[]
-  color: string
-  teamName: string
+  color: string = "FF0000";
+  teamName: string name = "Ryan";
   score: number
   teamLogo?: string
 }
@@ -36,8 +36,8 @@ export interface Snake {
 class Player implements PlayerInfo {
   id:string // this will be set by the game to assign a snake to each of the players
 
-  teamName = '' // Set your team name here
-  snakeColor = '' // Set your snake color here, must be a valid css color name or hexa color code. ex : #FAFAFA
+  teamName = 'Ryan' // Set your team name here
+  snakeColor = 'FF0000' // Set your snake color here, must be a valid css color name or hexa color code. ex : #FAFAFA
   deadImg = '' // An image url to display when your snake is dead
   teamLogo = '' // An image url for displaying your team logo
 
